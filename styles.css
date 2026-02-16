@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #7a0000;
+  color: #fff;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #500000;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 45px;
+}
+
+.logo-text {
+  font-weight: bold;
+}
+
+.burger {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  background: #a00000;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.nav-links a {
+  display: block;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(#d40000, #7a0000);
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+}
+
+/* BOTONES */
+.btn {
+  margin: 15px 10px 0;
+  padding: 12px 25px;
+  background: #ffb300;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn.whatsapp {
+  background: #25d366;
+}
+
+/* PAQUETES */
+.paquetes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.paquete {
+  background: #b30000;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.paquete:hover {
+  border-color: #00ff7f;
+}
+
+.precio {
+  font-size: 1.8rem;
+  color: #00ff7f;
+}
+
+/* COMPLEMENTOS */
+.complementos {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.complemento {
+  background: #8b0000;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  border: 3px solid #ffd700;
+}
+
+.img-box {
+  height: 100px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.complemento span {
+  color: #00ff7f;
+  font-weight: bold;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  color: #000;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 320px;
+  text-align: center;
+}
+
+/* CONTACTO */
+.contacto {
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .nav-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex !important;
+    position: static;
+    background: none;
+    gap: 20px;
+  }
+
+  .burger {
+    display: none;
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Chino Rosticería</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <img src="imgs/logorosticeria.png" alt="Logo" class="logo-img">
+        <span class="logo-text">El Chino Rosticería</span>
+      </div>
+
+      <!-- HAMBURGUESA POLLO -->
+      <div class="burger" id="burger">🍗</div>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#precios">Precios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <h1>Pollo rostizado y asado</h1>
+      <p>Recién hecho todos los días</p>
+      <div class="hero-buttons">
+        <a href="#precios" class="btn">Ver precios</a>
+        <a href="https://wa.me/521XXXXXXXXXX" class="btn whatsapp">Pedir por WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="precios" class="section">
+      <h2>Menú principal</h2>
+
+      <div class="paquetes">
+        <div class="paquete" data-title="Pollo completo"
+          data-info="Incluye salsa roja, salsa verde y tortillas. Ideal para 3 a 4 personas.">
+          <h3>Pollo rostizado o asado</h3>
+          <span class="precio">$130</span>
+        </div>
+
+        <div class="paquete" data-title="½ Pollo"
+          data-info="Incluye salsa y tortillas. Perfecto para 1 o 2 personas.">
+          <h3>½ Pollo</h3>
+          <span class="precio">$65</span>
+        </div>
+      </div>
+
+      <!-- COMPLEMENTOS -->
+      <h2 class="subtitulo">Complementos</h2>
+
+      <div class="complementos">
+
+        <div class="complemento">
+          <div class="img-box"></div>
+          <h4>Papa al ajillo</h4>
+          <span>$25</span>
+        </div>
+
+        <div class="complemento">
+          <div class="img-box"></div>
+          <h4>½ litro de mole</h4>
+          <span>$40</span>
+        </div>
+
+        <div class="complemento">
+          <div class="img-box"></div>
+          <h4>Pesceusitos</h4>
+          <span>$2 c/u</span>
+        </div>
+
+        <div class="complemento">
+          <div class="img-box"></div>
+          <h4>Arroz extra</h4>
+          <span>$15</span>
+        </div>
+
+        <div class="complemento">
+          <div class="img-box"></div>
+          <h4>Salsa extra</h4>
+          <span>$10</span>
+        </div>
+
+        <div class="complemento">
+          <div class="img-box"></div>
+          <h4>Papa dorada</h4>
+          <span>$20</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contacto">
+      <h2>Contacto</h2>
+      <a href="https://wa.me/521XXXXXXXXXX" class="btn whatsapp">
+        Pedir ahora por WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h3 id="modal-title"></h3>
+      <p id="modal-text"></p>
+      <button id="close-modal" class="btn">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
